@@ -16,4 +16,3 @@ Select Ano,count(*) Quantidade From Filmes Group by Ano order by Quantidade desc
 Select * From Atores where genero = 'M'
 --9
 Select * from Atores where genero = 'F' order by PrimeiroNome asc
---10
