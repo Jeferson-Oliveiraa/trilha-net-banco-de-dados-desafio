@@ -16,3 +16,13 @@ Select Ano,count(*) Quantidade From Filmes Group by Ano order by Quantidade desc
 Select * From Atores where genero = 'M'
 --9
 Select * from Atores where genero = 'F' order by PrimeiroNome asc
+--10
+Select Nome, Genero From FilmesGenero iNNER Join Filmes on Filmes.Id = FilmesGenero.IdFilme INNER JOIN Generos ON Generos.Id = FilmesGenero.IdGenero
+--11
+Select Nome, Genero From FilmesGenero iNNER Join Filmes on Filmes.Id = FilmesGenero.IdFilme INNER JOIN Generos ON Generos.Id = FilmesGenero.IdGenero Where Genero = 'Mistério' 
+--12
+Select Nome, PrimeiroNome, UltimoNome, Papel From 
+ElencoFilme iNNER Join Filmes on IdFilme = filmes.id 
+INNER JOIN Atores ON Atores.Id = ElencoFilme.IdAtor
+
+
